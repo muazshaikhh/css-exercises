@@ -15,26 +15,49 @@ body {
   justify-content: center;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.header {
+ display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;  /* closer to screenshot */
+  margin-bottom: 8px;
+
+}
+
+.text {
+  margin-bottom: 16px;
+}
+
 .modal {
   background: white;
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+  padding: 16px;             /* adds breathing room */
+  gap: 16px;
 }
 
 .icon {
+  display: flex;             /* centers the "!" properly */
+  align-items: center;
+  justify-content: center;
   color: royalblue;
-  font-size: 26px;
+  font-size: 20px;           /* shrink slightly */
   font-weight: 700;
   background: lavender;
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-shrink: 0;
 }
-
 .close-button {
   background: #eee;
   border-radius: 50%;
@@ -54,6 +77,8 @@ button {
   cursor: pointer;
   padding: 8px 16px;
   border-radius: 8px;
+  display: flex;
+  gap: 5px;
 }
 
 button.continue {
@@ -66,4 +91,10 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;                  /* a bit wider spacing */
+  margin-top: 8px; 
 }

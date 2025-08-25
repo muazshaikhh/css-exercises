@@ -1,0 +1,24 @@
+.odd-text {
+  color: black;
+  background-color: pink;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.odd-text.odd-third-text {
+    font-size: 30px;
+  }
+
+#second-text {
+    color: blue;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+
+#fourth-text {
+    color: black;
+    background-color: rgb(89, 250, 89);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
